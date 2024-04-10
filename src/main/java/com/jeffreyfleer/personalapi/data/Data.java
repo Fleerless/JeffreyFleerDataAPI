@@ -3,6 +3,7 @@ package com.jeffreyfleer.personalapi.data;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity
 @Table
@@ -19,6 +20,7 @@ public class Data {
     )
     private Long id;
     private String name;
+    @Transient
     private Integer age;
     private LocalDate birthdate;
     private String email;
@@ -26,17 +28,15 @@ public class Data {
     public Data() {
     }
 
-    public Data(Long id, String name, Integer age, LocalDate birthdate, String email) {
+    public Data(Long id, String name, LocalDate birthdate, String email) {
         this.id = id;
         this.name = name;
-        this.age = age;
         this.birthdate = birthdate;
         this.email = email;
     }
 
-    public Data(String name, Integer age, LocalDate birthdate, String email) {
+    public Data(String name, LocalDate birthdate, String email) {
         this.name = name;
-        this.age = age;
         this.birthdate = birthdate;
         this.email = email;
     }
@@ -50,7 +50,7 @@ public class Data {
     }
 
     public Integer getAge() {
-        return age;
+        return Period.between(birthdate, LocalDate.now()).getYears();
     }
 
     public LocalDate getBirthdate() {
