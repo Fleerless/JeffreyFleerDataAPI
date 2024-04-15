@@ -1,0 +1,6 @@
+com/jeffreyfleer/personalapi/PersonalApplication.class
+com/jeffreyfleer/personalapi/data/DataConfig.class
+com/jeffreyfleer/personalapi/data/DataRepository.class
+com/jeffreyfleer/personalapi/data/DataController.class
+com/jeffreyfleer/personalapi/data/DataService.class
+com/jeffreyfleer/personalapi/data/Data.class

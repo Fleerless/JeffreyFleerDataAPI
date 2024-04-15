@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.jeffreyfleer.personalapi.PersonalApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.203 s -- in com.jeffreyfleer.personalapi.PersonalApplicationTests
